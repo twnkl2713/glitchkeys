@@ -32,7 +32,7 @@
 
             <div class="game-box">
                 <p id="sentence">Artificial intelligence is the future.</p>
-                <input type="text" id="user-input" placeholder="Start typing..." autofocus>
+                <input type="text" id="user-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Start typing..." autofocus>
                 <button id="restart">Restart</button>
             </div>
 
@@ -44,6 +44,16 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        userInput.addEventListener("paste", (e) => e.preventDefault());
+        userInput.addEventListener("copy", (e) => e.preventDefault()); 
+        userInput.addEventListener("cut", (e) => e.preventDefault()); 
+        userInput.addEventListener("contextmenu", (e) => e.preventDefault()); 
+        document.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && (e.key === "v" || e.key === "c" || e.key === "x")) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
