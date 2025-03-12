@@ -18,7 +18,7 @@ let sentences = [
     "Automation increases efficiency in various fields."
 ];
 
-let timeLeft = 30;
+let timeLeft = 40;
 let score = 0;
 let highScore = 0;
 let round = 1;
@@ -72,7 +72,7 @@ function startGame() {
 function startRound() {
     if (!gameActive) return;
 
-    timeLeft = 30; 
+    timeLeft = 40; 
     roundNumberElement.innerText = `🏁 Round ${round}`;
     sentenceElement.innerText = sentences[Math.floor(Math.random() * sentences.length)];
     userInput.value = "";
