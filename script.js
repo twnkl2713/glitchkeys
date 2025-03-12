@@ -62,7 +62,7 @@ const aiTrashTalk = {
 function startGame() {
     round = 1;
     score = 0;
-    timeLeft = 30;
+    timeLeft = 40;
     gameActive = true;
     updateUI();
     startRound();
