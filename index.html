@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Reverse Typing Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>📖 How to Play</h2>
+            <p>Type the given sentence as accurately as possible before time runs out.</p>
+            <p>AI will sabotage your typing in multiple ways. Stay focused!</p>
+
+            <h2>⚠️ AI Sabotages</h2>
+            <ul>
+                <li><strong>🔄 Reverse Typing:</strong> AI flips your text backward.</li>
+                <li><strong>👻 Ghost Typing:</strong> AI adds random characters.</li>
+                <li><strong>🧊 Freeze Input:</strong> AI blocks typing for a few seconds.</li>
+                <li><strong>🤖 Fake Auto-Correct:</strong> AI replaces words unexpectedly.</li>
+            </ul>
+        </aside>
+
+        <main class="game-area">
+            <h1>⚔️ AI Reverse Typing Battle</h1>
+            <p>Type the sentence below, but watch out! AI will try to sabotage you.</p>
+
+            <h2 id="round-number">🏁 Round 1</h2> 
+            
+            <p id="ai-comment" style="font-weight: bold; color: #ff4d4d; font-size: 18px;"></p>
+
+            <div class="game-box">
+                <p id="sentence">Artificial intelligence is the future.</p>
+                <input type="text" id="user-input" placeholder="Start typing..." autofocus>
+                <button id="restart">Restart</button>
+            </div>
+
+            <div class="stats">
+                <p>⏳ Time Left: <span id="time">20</span> sec</p>
+                <p>🔥 Score: <span id="score">0</span></p>
+                <p>🏅 High Score: <span id="high-score">0</span></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
