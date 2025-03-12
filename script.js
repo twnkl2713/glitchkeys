@@ -8,10 +8,10 @@ const roundNumberElement = document.getElementById("round-number");
 const aiCommentElement = document.getElementById("ai-comment");
 
 let sentences = [
-    "Artificial intelligence is transforming the world.",
+    "AI is transforming the world.",
     "Neural networks are inspired by the human brain.",
-    "Machine learning models improve with data.",
-    "Deep learning requires large amounts of data.",
+    "ML models improve with data.",
+    "DL requires large amounts of data.",
     "AI can recognize patterns and make predictions.",
     "Robotics and AI are revolutionizing industries.",
     "Technology is evolving at an unprecedented rate.",
